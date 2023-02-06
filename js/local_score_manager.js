@@ -30,7 +30,7 @@ LocalScoreManager.prototype.localStorageSupported = function () {
   var storage = window.localStorage;
 
   try {
-    storage.setItem(testKey, "99999999");
+    storage.setItem(testKey, "1");
     storage.removeItem(testKey);
     return true;
   } catch (error) {
